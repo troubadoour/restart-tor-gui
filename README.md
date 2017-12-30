@@ -1,11 +1,13 @@
 # GUI Tor service restart #
 
-restar-to-gui is a graphical tool for restarting Tor. It shows the
+restart-tor-gui is a graphical tool for restarting Tor. It shows the
 tor bootstrap sequence in a progress bar. It closes itself two seconds
 after tor bootstrap has completed.
+
 Error catching is implemented after the restart command. In case of error,
 it displays the output of the "sudo systemctl restart tor@default" command
 in a message box.
+
 restart-tor-gui is produced independently from the Tor anonymity
 software and carries no guarantee from The Tor Project about quality,
 suitability or anything else.
