@@ -5,7 +5,7 @@
 [Desktop Entry]
 Type=Application
 Terminal=false
-Exec=python3 /usr/lib/restart-tor-gui/restart_tor_gui.py
+Exec=/usr/lib/restart-tor-gui/restart_tor_gui.py
 Name=Restart Tor GUI
 GenericName=Restart Tor GUI
 Comment=Graphical toll for restarting Tor
