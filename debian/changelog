@@ -1,3 +1,9 @@
+restart-tor-gui (1:0.1-2) UNRELEASED; urgency=medium
+
+  * Initial release.
+
+ -- troubadour <trobador@riseup.net>  Sat, 30 Dec 2017 12:06:53 +0000
+
 restart-tor-gui (1:0.1-1) unstable; urgency=low
 
   * Initial release.
