@@ -15,7 +15,7 @@ Standards-Version: 3.9.8
 
 Package: restart-tor-gui
 Architecture: all
-Depends: ${misc:Depends}, python3, python-pyqt5
+Depends: ${misc:Depends}, python3
 Recommends: anon-icon-pack, tor, obfs4proxy
 Description: GUI Tor service restart
  restart-tor-gui is a graphical tool for restarting Tor. It shows the
