@@ -75,14 +75,11 @@ class RestartTor(QWidget):
         command = Popen(['sudo', 'systemctl', 'restart', 'tor@default'], stdout=PIPE, stderr=PIPE)
         stdout, stderr = command.communicate()
 
-        std_err = "b''"
-        stderr = str(stderr)
-        command_success = stderr == std_err
+        std_err = stderr.decode()
+        command_success = std_err == ''
 
         if not command_success:
-            # Format stderr for readability in message box.
-            stderr = re.sub(r'\n', stderr, ' \n')[3:][:-1]
-            error = QMessageBox(QMessageBox.Critical, 'Restart tor', stderr, QMessageBox.Ok)
+            error = QMessageBox(QMessageBox.Critical, 'Restart tor', std_err, QMessageBox.Ok)
             error.exec_()
             self.close()
 
